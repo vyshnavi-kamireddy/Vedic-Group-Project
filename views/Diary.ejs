@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Time Capsule Diary</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1><span class="capsule-icon">🕰</span> Time Capsule Diary</h1>
+    <form id="diaryForm">
+      <label for="entry">Your Message</label>
+      <textarea id="entry" placeholder="Write your message..." required></textarea>
+      <label for="unlockDate">Unlock Date</label>
+      <input type="date" id="unlockDate" required />
+      <label for="unlockTime">Unlock Time</label>
+      <input type="time" id="unlockTime" required />
+      <label for="photo">Attach a Photo (optional)</label>
+      <input type="file" id="photo" accept="image/*" />
+      <button type="submit" class="primary-btn">Save Entry</button>
+    </form>
+    <div id="message"></div>
+    <div id="capsule"></div>
+    <button id="showEntriesBtn" class="secondary-btn">Show All My Capsules</button>
+    <div id="allCapsules"></div>
+  </div>
+  <footer>
+    <p>Made with <span style="color:#e25555;">♥</span> for your future self</p>
+  </footer>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script src="/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Time Capsule Diary</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container login-con" >
+    <h1>Welcome Back</h1>
+    <form action="/Login" method="POST" style="margin-left: 30px;" >
+      <label for="Email">Email</label>
+      <input type="email" id="Email" name="Email" required class="input-btn">
+
+      <label for="Password">Password</label>
+      <input type="password" id="Password" name="Password" required class="input-btn">
+
+      <button type="submit" class="primary-btn Login-btn">Login</button>
+    </form>
+
+    <p style="text-align:center; margin-top:2rem;">Don't have an account? <a href="/signup" style="color:#5a189a;">Sign up</a></p>
+  </div>
+  <footer>
+    <p>Made with <span style="color:#e25555;">♥</span> for your future self</p>
+  </footer>
+</body>
+</html>
